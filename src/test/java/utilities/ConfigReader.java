@@ -8,6 +8,7 @@ import java.util.Properties;
 public class ConfigReader {
 
     public static Properties properties;
+
     static {
 
         String dosyaYolu = "configuration.properties";
@@ -23,7 +24,7 @@ public class ConfigReader {
     }
 
     public static String getProperty(String key) {
-        
+
         return properties.getProperty(key);
     }
 
