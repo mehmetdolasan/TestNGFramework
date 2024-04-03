@@ -48,7 +48,7 @@ public class C05_SmokeNegativeTest {
 
     }
 
-    @Test
+    @Test(groups = "grup1")
     public void wrongUserAndPassword() throws InterruptedException {
 
         //1- "https://demo1.alo-tech.com/" adresine git.

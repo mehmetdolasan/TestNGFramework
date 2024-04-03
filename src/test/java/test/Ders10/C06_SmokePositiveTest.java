@@ -8,14 +8,14 @@ import utilities.Driver;
 
 public class C06_SmokePositiveTest {
 
-    BrcPage brcPage = new BrcPage();
-
-    @Test
+    @Test(groups = "grup1")
     public void positiveTest() throws InterruptedException {
+
+        BrcPage brcPage = new BrcPage();
 
         //1- "https://www.bluerentalcars.com/" adresine gidilir.
         Driver.getDriver().get(ConfigReader.getProperty("brcURL"));
-        Thread.sleep(1000);
+        Thread.sleep(2000);
 
         //2- Login butonuna tiklanir.
         brcPage.loginButonInHomePage.click();

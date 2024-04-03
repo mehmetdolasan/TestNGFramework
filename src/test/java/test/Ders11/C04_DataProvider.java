@@ -16,7 +16,7 @@ public class C04_DataProvider {
         return new Object[][]{{"java"},{"selenium"},{"samsung"},{"iphone"}};
     }
 
-    @Test(dataProvider = "aranacakKelimeler")
+    @Test(dataProvider = "aranacakKelimeler", groups = "grup1")
     public void test(String kelimeler) {
 
         AmazonPage amazonPage = new AmazonPage();
